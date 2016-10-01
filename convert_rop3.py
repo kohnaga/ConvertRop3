@@ -8,7 +8,7 @@ import re
 # infile[in]:    hpgl2/pcl file(Note:file should have rop3 command!!)
 # rop3[in]:      rop3 which is used for convert
 # outfile[out]:  converted file
-##ß
+##
 def convert_ROP3(infile, rop3, outfile):
     pattern = "\x1B" + "\*" + ".\x6C\x6F"
     infp = open(infile, 'rb')
